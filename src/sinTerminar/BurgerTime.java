@@ -1,0 +1,75 @@
+package sinTerminar;
+
+import java.util.Scanner;
+
+/*
+UVA #11661
+https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=2708
+
+Everybody knows that along the more important highways there are countless fast food restaurants.
+One can find easily hamburgers, hot dogs, pizzas, sandwiches ... food everywhere.
+Many times the problem isn’t to find a restaurant but a drugstore. After a big lunch with fast food
+it’s normal that we need a drugstore because our stomach begins to feel pain.
+Given the locations of the restaurants and drugstores on a highway, you want to determine the
+minimum distance between a restaurant and a drugstore.
+Input
+The first line of each test case gives an integer L (1 ≤ L ≤ 2000000) indicating the length of the
+highway.
+The second line of each test case contains a string S of length L, showing the positions of the
+restaurants and drugstores along the highway in the following manner:
+• The character ‘R’ represents a place with a restaurant.
+• The character ‘D’ represents a place with a drugstore.
+• The character ‘Z’ represents a place with a restaurant and a drugstore.
+• The character ‘.’ represents an empty place.
+You can suppose that every test case has at least one restaurant and at least one drugstore.
+The end of the input is indicated when L = 0.
+Output
+For each case in the input, print one line with the minimum distance between a restaurant and a
+drugstore.
+Sample Input
+2
+RD
+5
+..Z..
+10
+.R......D.
+10
+.R..Z...D.
+10
+...D..R...
+25
+..D...R.RR...DD...D.R...R
+0
+Sample Output
+1
+0
+7
+0
+3
+2
+*/
+public class BurgerTime {
+
+    public void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String tipoTienda, carretera;
+        int cantidad;
+        
+        while (true) {
+            cantidad = sc.nextInt();
+            
+            if (cantidad == 0)
+                break;
+            
+            carretera = sc.next();
+            
+            int largo = carretera.length();
+            
+            for (int i = 0; i < largo; i++) {
+                char letra = carretera.charAt(i);
+                
+                
+            }
+        }
+    }
+}
